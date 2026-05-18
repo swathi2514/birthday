@@ -1,0 +1,131 @@
+body {
+    
+    background-color: rgb(21, 181, 234);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+}
+
+img{
+    width: 200px;
+    position: absolute;
+    animation: float 3s infinite ease-in-out;
+}
+
+.top-left{
+    top: 10px;
+    left: 10px;
+
+    animation: floatLeft 3s infinite ease-in-out;
+}
+
+.top-right{
+    top: 10px;
+    right: 10px;
+
+    animation: floatRight 3s infinite ease-in-out;
+}
+
+.bottom-left{
+    bottom: 10px;
+    left: 10px;
+
+    animation: floatLeft 3s infinite ease-in-out;
+}
+
+.bottom-right{
+    bottom: 10px;
+    right: 10px;
+
+    animation: floatRight 3s infinite ease-in-out;
+}
+
+
+
+@keyframes floatLeft{
+
+    0%{
+        transform: rotate(305deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotate(305deg) translateY(-15px);
+    }
+
+    100%{
+        transform: rotate(305deg) translateY(0px);
+    }
+}
+
+@keyframes floatRight{
+
+    0%{
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotate(45deg) translateY(-15px);
+    }
+
+    100%{
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+.box{
+    width: 500px;
+    padding: 40px;
+    margin: 120px auto;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    color: rgb(20, 20, 21);
+    font-size: 40px;
+    text-align: left;
+    
+}
+
+p {
+    font-size: 20px;
+    color: black;
+}
+
+button{
+    padding: 15px 35px;
+
+    font-size: 20px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        45deg,
+        hotpink,
+        deeppink
+    );
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    box-shadow: 0 0 15px pink;
+}
+
+button:hover{
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 30px hotpink;
+}

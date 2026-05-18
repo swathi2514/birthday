@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memory Gift Box</title>
+  <link rel="stylesheet" href="fourth.css">
+  
+</head>
+<body>
+
+<header>
+    <div class="heart">
+            <div class="floating-hearts">
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+        <span>❤️</span>
+        <span>💞</span>
+        <span>🌸</span>
+    </div>
+    <h1>Memories</h1></header>
+
+
+<div class="grid">
+  <div class="box" onclick="openMemory('image1.jpeg')"> Memory 1</div>
+  <div class="box" onclick="openMemory('image2.jpeg')"> Memory 2</div>
+  <div class="box" onclick="openMemory('image3.jpeg')"> Memory 3</div>
+  <div class="box" onclick="openMemory('image4.jpeg')">Memory 4</div>
+  <div class="box" onclick="openMemory('image5.jpeg')">Memory 5</div>
+  <div class="box" onclick="openMemory('image6.jpeg')">Memory 6</div>
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <span onclick="closeMemory()" class="close">&times;</span>
+  <img id="popupImg">
+</div>
+<button id="play-btn">Fall In </button>
+
+<button id="pause-btn">Fall out</button>
+
+<audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="fourth.js"></script>
+<div>
+  <a href="fifth.html">
+  <button> Next...</button>
+  </a>
+</div>
+</body>
+</html>

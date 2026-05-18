@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(21, 181, 234);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:0;
+}
+header{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg,#ff4da6,#ff1493);
+    color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+header h1{
+    font-size: 50px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    animation: glow 2s infinite alternate;
+}
+
+header p{
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+@keyframes glow{
+    from{
+        text-shadow: 0 0 10px white;
+    }
+
+    to{
+        text-shadow: 0 0 25px white,
+                     0 0 40px pink;
+    }
+}
+
+/* Floating Emojis */
+
+.floating-hearts span{
+    position: absolute;
+    font-size: 30px;
+    animation: float 6s linear infinite;
+    opacity: 0.8;
+}
+
+/* Different positions */
+
+.floating-hearts span:nth-child(1){
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.floating-hearts span:nth-child(2){
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.floating-hearts span:nth-child(3){
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.floating-hearts span:nth-child(4){
+    left: 60%;
+    animation-delay: 3s;
+}
+
+.floating-hearts span:nth-child(5){
+    left: 80%;
+    animation-delay: 4s;
+}
+
+.floating-hearts span:nth-child(6){
+    left: 92%;
+    animation-delay: 5s;
+}
+
+@keyframes float{
+
+    0%{
+        transform: translateY(120px) rotate(0deg);
+        opacity:0;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        transform: translateY(-120px) rotate(360deg);
+        opacity:0;
+    }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 30px;   /* this controls space between boxes */
+  justify-content: center;
+  margin-top: 50px;
+}
+.box {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg,#ff4da6,#ff1493);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  background: rgb(12, 191, 232);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup img {
+  width: 800px;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+button{
+    padding:15px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:40px;
+    margin:10px;
+    cursor:pointer;
+    color:white;
+}
+
+#play-btn{
+    background:rgb(245, 97, 200);
+}
+
+#pause-btn{
+    background:rgb(245, 97, 200);
+}
+button{
+    padding: 15px 35px;
+
+    font-size: 20px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        45deg,
+        hotpink,
+        deeppink
+    );
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    box-shadow: 0 0 15px pink;
+}
+
+button:hover{
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 30px hotpink;
+}

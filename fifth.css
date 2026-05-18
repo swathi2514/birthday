@@ -1,0 +1,173 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: rgb(21, 181, 234);
+
+    font-family:Arial, sans-serif;
+
+}
+.balloon{
+    position:absolute;
+    width:70px;
+    height:90px;
+    border-radius:50%;
+    animation:float 6s infinite ease-in-out;
+}
+
+.balloon1{
+    background:pink;
+    left:10%;
+    top:80%;
+}
+
+.balloon2{
+    background:yellow;
+    right:15%;
+    top:85%;
+}
+
+.balloon3{
+    background:lightblue;
+    left:45%;
+    top:90%;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-40px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:60px;
+    text-shadow:0 0 10px white;
+}
+
+.cake{
+    position:relative;
+    width:250px;
+    height:220px;
+    margin:auto;
+}
+
+/* CAKE LAYERS */
+
+.bottom-layer{
+    position:absolute;
+    width:250px;
+    height:80px;
+    background:#ff4fa3;
+    bottom:0;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.middle-layer{
+    position:absolute;
+    width:210px;
+    height:70px;
+    background:#ff85c2;
+    bottom:70px;
+    left:20px;
+    border-radius:20px;
+}
+
+.top-layer{
+    position:absolute;
+    width:170px;
+    height:60px;
+    background:#ffc1dd;
+    bottom:130px;
+    left:40px;
+    border-radius:20px;
+}
+
+/* CANDLE */
+
+.candle{
+    position:absolute;
+    width:20px;
+    height:70px;
+    background:white;
+    top:-10px;
+    left:115px;
+    border-radius:10px;
+}
+
+/* FLAME */
+
+.flame{
+    position:absolute;
+    width:25px;
+    height:25px;
+    background:gold;
+    border-radius:50%;
+    top:-22px;
+    left:-2px;
+
+    box-shadow:0 0 20px orange;
+
+    animation:flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker{
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.15);
+    }
+}
+
+/* BUTTON */
+
+button{
+    margin-top:60px;
+    padding:15px 35px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#ff4fa3;
+    color:white;
+
+    font-size:22px;
+    cursor:pointer;
+
+    box-shadow:0 0 20px pink;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+/* MESSAGE */
+
+#message{
+    color:white;
+    margin-top:30px;
+    font-size:35px;
+}
